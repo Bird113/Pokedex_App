@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #057164;
+    --secondary-color: white;
+    --3rd-color: #832121;
+    --dark-grey: #2b2b2b;
+    --header-color1:#cc6300;
+    --page-color: #ffdab9;
+    --solid-black: rgba(0,0,0,1);
+    --lighter-black: rgba(0,0,0,0.25);
+    --secondary-link: #9ab9b3;
+    --active-link: red;
+    --sun1: skyblue;
+    --sun2: #fcffad;
+    --sun3: #061597;
+    --font-size: 18px;
+}
+* {
+    box-sizing: border-box;
+}
+
+main{
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    
+}
+
+body{
+    background: var(--page-color);
+    color:var(--3rd-color);
+    font-family: 'IBM Plex Sans' , sans-serif;
+    font-weight: 700 ;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.navigation-list{
+    list-style-type: none;
+}
+
+@media all and (max-width:500px){
+    .project-list{
+        grid-template-columns: 1fr;
+    }
+}
+@media all and (min-width:500px) and (max-width:750px){
+    .project-list{
+        grid-template-columns: 1fr,1fr;
+    }
+}
