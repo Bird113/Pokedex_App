@@ -10,7 +10,7 @@ let pokemonList=[
   {Name: 'Bulbasaur', 
   height: 0.7, 
   type: ['grass', 'poisin']}  
-];
+]
 
 for (let i = 0; i < pokemonList.length; i++) {
   document.write(`${pokemonList[i].Name} (height: ${pokemonList[i].height})`)
