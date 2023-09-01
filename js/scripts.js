@@ -11,7 +11,7 @@ let pokemonList=[
   height: 0.7, 
   type: ['grass', 'poisin']}  
 ]
-
+// fixed for loop=> for each loop
   pokemonList.forEach(function(pokemon){
     document.write(' ' + pokemon.name + pokemon.height + ' ');
   });  
