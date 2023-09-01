@@ -27,3 +27,12 @@ let pokemomRepository = (function () {
   };
 })();
 
+pokemomRepository.getAll().forEach(function (pokemon) {
+  let pokemonDetails = pokemon.name + " Height: " + pokemon.height ;
+  
+  // if(pokemon.height > 0.6) {
+  //   pokemonDetails + "THATS A BIG POKEMON!";
+  // }
+
+  document.write(pokemonDetails + "<br>");
+})
