@@ -12,28 +12,34 @@ let pokemomRepository = (function () {
     height: 0.7, 
     type: ['grass', 'poisin']}  
 ];
-
+ 
+ 
   function add(pokemon) {
     pokemonList.push(pokemon);
   }
-
+ 
   function getAll() {
     return pokemonList
   }
 
+  function addListItem(pokemon) {
+    let pokemonList = document.querySelector(".pokemon-list");
+    let listItem = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = pokemon.name;
+    button.classList.add("button-class");
+    listItem.appendChild(button);
+    pokemonList.appendChild(listItem);
+  }
+
   return{
-    add:add,
-    getAll:getAll
+    add: add,
+    getAll: getAll,
+    addListItem: addListItem
   };
 })();
 
 pokemomRepository.getAll().forEach(function (pokemon) {
-  let pokemonDetails = pokemon.name + " , Height: " + pokemon.height ;
-
-  if(pokemon.height > 0.6) {
-  document.write (pokemonDetails + " - THATS A BIG POKEMON!" + "<br>") ;
-}
-  else{
-  conso(pokemonDetails + "<br>");
-}
-})
+  
+  pokemomRepository.addListItem(pokemon);
+});
