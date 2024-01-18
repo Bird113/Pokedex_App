@@ -13,7 +13,7 @@ let pokemomRepository = (function () {
     type: ['grass', 'poisin']}  
 ];
  
-//  will add pokemom to list
+//  will add pokemon to list
   function add(pokemon) {
     pokemonList.push(pokemon);
   }
