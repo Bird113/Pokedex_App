@@ -40,7 +40,7 @@ let pokemomRepository = (function () {
   function showDetails(pokemon){
     console.log(pokemon)
   } 
-
+  
   return{
     add: add,
     getAll: getAll,
@@ -52,3 +52,4 @@ pokemomRepository.getAll().forEach(function (pokemon) {
   
   pokemomRepository.addListItem(pokemon);
 });
+
