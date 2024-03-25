@@ -20,6 +20,12 @@
 
 .pokemon-list{
     list-style-type: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    
 }
 
 .button-class {
@@ -40,11 +46,11 @@
     color: white;
     border: 2px solid black;
     text-transform: capitalize;
-    
+    width: 200px;
   }
 
 body{
-    background: var(--page-color);
+    background: burlywood;
     color:var(--3rd-color);
     font-family: 'IBM Plex Sans' , sans-serif;
     font-weight: 700 ;
