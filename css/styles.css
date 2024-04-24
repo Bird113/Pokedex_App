@@ -58,31 +58,6 @@ body{
     line-height: 1.6;
 }
 
-.navigation-bar{
-    width: 20%;
-    float: left;
-}
-
-.navigation-list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.navigation-list_item{
-    text-decoration: none;
-}
-.navigation-list_item li{
-    margin: 1px 0;
-    border: 1px solid #999;
-}
-.navigation-list a{
-    display: block;
-    line-height: 3em;
-    width: 50%;
-    text-decoration: none;
-    color: #057164 ;
-}
-
 #modal-container {
     display: none;
 }
